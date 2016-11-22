@@ -1,0 +1,17 @@
+media:
+    resource: "@MediaBundle/Resources/config/routing.yml"
+    prefix:   /
+
+media_commentaire:
+    resource: "@MediaBundle/Resources/config/routing/commentaire.yml"
+    prefix:   /commentaire
+
+new_album:
+    path:      /new
+    defaults:  { _controller: MediaBundle:Album:new }
+
+
+#admin:
+#    resource: "@AdminBundle/Controller/"
+#    type:     annotation
+#    prefix: /admin
